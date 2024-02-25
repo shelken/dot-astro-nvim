@@ -9,6 +9,33 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-  "NoahTheDuke/vim-just",
-  ft = { "just" },
+  {
+    "NoahTheDuke/vim-just",
+    ft = { "just" },
+  },
+
+  -- notify
+  {
+  "rcarriga/nvim-notify",
+  opts = {
+    stages = "static",
+    render = "compact",
+    max_width = "30",
+    fps = 5,
+    level = 1,
+    timeout = 1000,
+  },
+  },
+
+  -- noice
+  {
+  "folke/noice.nvim",
+  config = function()
+    require("noice").setup {
+      presets = {
+        command_palette = false, -- position the cmdline and popupmenu together
+      },
+    }
+  end,
+  }
 }
