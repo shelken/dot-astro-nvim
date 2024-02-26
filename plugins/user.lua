@@ -16,26 +16,26 @@ return {
 
   -- notify
   {
-  "rcarriga/nvim-notify",
-  opts = {
-    stages = "static",
-    render = "compact",
-    max_width = "30",
-    fps = 5,
-    level = 1,
-    timeout = 1000,
-  },
+    "rcarriga/nvim-notify",
+    opts = {
+      stages = "static",
+      render = "compact",
+      max_width = "30",
+      fps = 6,
+      level = 1,
+      timeout = 1000,
+    },
   },
 
   -- noice
   {
-  "folke/noice.nvim",
-  config = function()
-    require("noice").setup {
-      presets = {
-        command_palette = false, -- position the cmdline and popupmenu together
-      },
-    }
-  end,
-  }
+    "folke/noice.nvim",
+    config = function()
+      require("noice").setup {
+        presets = {
+          command_palette = false, -- position the cmdline and popupmenu together
+        },
+      }
+    end,
+  },
 }

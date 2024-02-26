@@ -14,11 +14,11 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.lua" },
 
   -- 自动补全命令
-  { import = "astrocommunity.completion.cmp-cmdline"},
+  { import = "astrocommunity.completion.cmp-cmdline" },
   -- replaces the UI for messages, cmdline and the popupmenu
   -- https://github.com/folke/noice.nvim
-  { import = "astrocommunity.utility.noice-nvim"},
-  
+  { import = "astrocommunity.utility.noice-nvim" },
 }
