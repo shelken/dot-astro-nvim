@@ -16,6 +16,7 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.terraform" },
+  { import = "astrocommunity.pack.java" },
 
   -- 自动补全命令
   { import = "astrocommunity.completion.cmp-cmdline" },
