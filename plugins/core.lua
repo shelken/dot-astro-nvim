@@ -26,7 +26,7 @@ return {
 
       dashboard.opts.opts.noautocmd = true
       dashboard.section.terminal.opts.redraw = true
-      dashboard.section.terminal.command = "cat ~/.config/nvim/lua/user/plugins/mio.txt"
+      dashboard.section.terminal.command = "cat ~/.config/astronvim/lua/user/plugins/mio.txt"
       dashboard.section.terminal.width = 50
       dashboard.section.terminal.height = 24
       dashboard.section.terminal.opts.window_config.border = "rounded"
