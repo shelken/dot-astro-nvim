@@ -41,4 +41,16 @@ return {
 
   -- wakatime
   { "wakatime/vim-wakatime", lazy = false },
+  -- osc 52
+  {
+    "ojroques/nvim-osc52",
+    keys = {
+      {
+        mode = "v",
+        "<leader>y",
+        function() require("osc52").copy_visual() end,
+        desc = "copy selection to system clipboard (visual mode)",
+      },
+    },
+  },
 }
