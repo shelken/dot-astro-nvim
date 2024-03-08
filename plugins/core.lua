@@ -53,7 +53,7 @@ return {
       local luasnip = require "luasnip"
       luasnip.filetype_extend("javascript", { "javascriptreact" })
       require("luasnip.loaders.from_lua").load {
-        paths = { "~/.config/nvim/lua/user/snippets" },
+        paths = { "~/.config/astronvim/lua/user/snippets" },
       }
     end,
   },
