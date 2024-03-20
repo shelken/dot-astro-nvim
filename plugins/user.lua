@@ -9,6 +9,27 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = false,
+          hide_dotfiles = true,
+          hide_by_name = {
+            -- ".git",
+            -- ".DS_Store",
+          },
+          always_show = { -- remains visible even if other settings would normally hide it
+            ".gitignore",
+            ".env*",
+          },
+        },
+      },
+    },
+  },
+
   {
     "NoahTheDuke/vim-just",
     ft = { "just" },
