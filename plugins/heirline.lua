@@ -1,4 +1,5 @@
 return {
+  -- 自定义头部导航栏
   "rebelot/heirline.nvim",
   opts = function(_, opts)
     local status = require "astronvim.utils.status"
