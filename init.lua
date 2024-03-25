@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "catppuccin-mocha",
+  colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -34,6 +34,7 @@ return {
         enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           "lua",
+          "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
@@ -51,6 +52,30 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      ---- Frontend & NodeJS
+      -- "tsserver", -- typescript/javascript language server
+      "html", -- html language server
+      "cssls", -- css language server
+      ---- Configuration Language
+      "marksman", -- markdown ls
+      "jsonls", -- json language server
+      "yamlls", -- yaml language server
+      "taplo", -- toml language server
+      ---- Backend
+      "lua_ls", -- lua
+      "gopls", -- go
+      "rust_analyzer", -- rust
+      "pyright", -- python
+      "ruff_lsp", -- extremely fast Python linter and code transformation
+      "jdtls", -- java
+      "nil_ls", -- nix language server
+      ---- Operation & Cloud Nativautoindente
+      "bashls", -- bash
+      "cmake", -- cmake language server
+      "clangd", -- c/c++
+      "dockerls", -- dockerfile
+      "terraformls", -- terraform hcl
+      -- "nushell", -- nushell language server
     },
   },
 
