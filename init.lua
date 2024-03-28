@@ -1,5 +1,5 @@
 return {
-  -- Configure AstroNvim updates
+  -- Configure AstroNvim  updates
   updater = {
     remote = "origin", -- remote to use
     channel = "stable", -- "stable" or "nightly"
