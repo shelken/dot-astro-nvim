@@ -53,7 +53,7 @@ return {
     servers = {
       -- "pyright"
       ---- Frontend & NodeJS
-      -- "tsserver", -- typescript/javascript language server
+      "tsserver", -- typescript/javascript language server
       "html", -- html language server
       "cssls", -- css language server
       ---- Configuration Language
