@@ -13,6 +13,7 @@ return {
       "terraform",
       "nix",
       "csv",
+      "helm",
       -- other programming language
       "diff",
       "gitignore",
