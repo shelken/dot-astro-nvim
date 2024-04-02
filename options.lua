@@ -6,6 +6,9 @@ return {
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    swapfile = false,   -- Swapfile
+    title = true,
+    titlelen = 20,
     wrap = false, -- sets vim.opt.wrap
   },
   g = {
