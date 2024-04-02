@@ -59,16 +59,16 @@ return {
   },
 
   -- noice
-  {
-    "folke/noice.nvim",
-    config = function()
-      require("noice").setup {
-        presets = {
-          command_palette = false, -- position the cmdline and popupmenu together
-        },
-      }
-    end,
-  },
+  -- {
+  --   "folke/noice.nvim",
+  --   config = function()
+  --     require("noice").setup {
+  --       presets = {
+  --         command_palette = false, -- position the cmdline and popupmenu together
+  --       },
+  --     }
+  --   end,
+  -- },
 
   -- wakatime
   { "wakatime/vim-wakatime", lazy = false },
@@ -102,4 +102,7 @@ return {
       },
     },
   },
+
+    -- full signature help, docs and completion for the nvim lua API.
+    -- { "folke/neodev.nvim",     opts = {} },
 }
