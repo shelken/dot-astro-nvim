@@ -41,7 +41,7 @@ return {
   { import = "astrocommunity.completion.cmp-cmdline" },
   -- replaces the UI for messages, cmdline and the popupmenu
   -- https://github.com/folke/noice.nvim
-  { import = "astrocommunity.utility.noice-nvim" },
+  -- { import = "astrocommunity.utility.noice-nvim" },
   -- 滚动条
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
 }
