@@ -68,6 +68,7 @@ return {
       "pyright", -- python
       "ruff_lsp", -- extremely fast Python linter and code transformation
       "jdtls", -- java
+      "bufls",
       "nil_ls", -- nix language server
       ---- Operation & Cloud Nativautoindente
       "bashls", -- bash
@@ -76,6 +77,15 @@ return {
       "dockerls", -- dockerfile
       "terraformls", -- terraform hcl
       -- "nushell", -- nushell language server
+    },
+    config = {
+      -- the offset_enconding of clangd will confilicts whit null-ls
+      -- so we need to manually set it to utf-8
+      clangd = {
+        capabilities = {
+          offsetEncoding = "utf-8",
+        },
+      },
     },
   },
 

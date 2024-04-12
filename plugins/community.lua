@@ -28,6 +28,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.just" },
+  { import = "astrocommunity.pack.proto" },
 
   -- cloud
   { import = "astrocommunity.pack.docker" },
