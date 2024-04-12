@@ -73,7 +73,7 @@ return {
       ---- Operation & Cloud Nativautoindente
       "bashls", -- bash
       "cmake", -- cmake language server
-      "clangd", -- c/c++
+      -- "clangd", -- c/c++
       "dockerls", -- dockerfile
       "terraformls", -- terraform hcl
       -- "nushell", -- nushell language server
