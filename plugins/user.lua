@@ -71,7 +71,7 @@ return {
   -- },
 
   -- wakatime
-  { "wakatime/vim-wakatime", lazy = true },
+  { "wakatime/vim-wakatime", lazy = false },
   -- osc 52
   {
     "ojroques/nvim-osc52",
