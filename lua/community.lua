@@ -7,14 +7,6 @@ return {
   "AstroNvim/astrocommunity",
   -- theme
   { import = "astrocommunity.colorscheme.catppuccin" },
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    opts = function(_, opts)
-      opts.flavour = "macchiato" -- latte, frappe, macchiato, mocha
-      opts.transparent_background = true -- setting the background color.
-    end,
-  },
   -- language
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.go" },
@@ -43,7 +35,7 @@ return {
   { import = "astrocommunity.completion.cmp-cmdline" },
   -- replaces the UI for messages, cmdline and the popupmenu
   -- https://github.com/folke/noice.nvim
-  -- { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.utility.noice-nvim" },
   -- 滚动条
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
 }
