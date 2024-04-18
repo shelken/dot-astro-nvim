@@ -66,6 +66,26 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+        
+        -- comment-box
+        ["<Leader>mm"] = {":CBccbox", desc = "美化注释"},
+        
+        -- undo history
+        ["<Leader>uh"] = { "<cmd>Telescope undo<cr>", desc = "Telescope undo" },
+        -- yank_history
+        ["<Leader>yh"] = {
+          function() require("telescope").extensions.yank_history.yank_history() end,
+          desc = "Preview Yank History",
+        },
+
+      },
+      x = {
+        -- comment-box
+        ["<Leader>mm"] = {":CBccbox", desc = "美化注释"},
+      },
+      v = {
+        -- comment-box
+        ["<Leader>mm"] = {":CBccbox", desc = "美化注释"},
       },
       t = {
         -- setting a mapping to false will disable it
