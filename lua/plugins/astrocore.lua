@@ -77,6 +77,18 @@ return {
           function() require("telescope").extensions.yank_history.yank_history() end,
           desc = "Preview Yank History",
         },
+        -- implementation/definition preview
+        ["gpd"] = { "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", desc = "goto_preview_definition" },
+        ["gpt"] = {
+          "<cmd>lua require('goto-preview').goto_preview_type_definition()<CR>",
+          desc = "goto_preview_type_definition",
+        },
+        ["gpi"] = {
+          "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>",
+          desc = "goto_preview_implementation",
+        },
+        ["gP"] = { "<cmd>lua require('goto-preview').close_all_win()<CR>", desc = "close_all_win" },
+        ["gpr"] = { "<cmd>lua require('goto-preview').goto_preview_references()<CR>", desc = "goto_preview_references" },
 
       },
       x = {
