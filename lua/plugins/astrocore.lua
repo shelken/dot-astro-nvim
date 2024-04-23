@@ -66,10 +66,10 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-        
+
         -- comment-box
-        ["<Leader>mm"] = {":CBccbox", desc = "美化注释"},
-        
+        ["<Leader>mm"] = { ":CBccbox", desc = "美化注释" },
+
         -- undo history
         ["<Leader>uh"] = { "<cmd>Telescope undo<cr>", desc = "Telescope undo" },
         -- yank_history
@@ -89,15 +89,14 @@ return {
         },
         ["gP"] = { "<cmd>lua require('goto-preview').close_all_win()<CR>", desc = "close_all_win" },
         ["gpr"] = { "<cmd>lua require('goto-preview').goto_preview_references()<CR>", desc = "goto_preview_references" },
-
       },
       x = {
         -- comment-box
-        ["<Leader>mm"] = {":CBccbox", desc = "美化注释"},
+        ["<Leader>mm"] = { "<cmd>CBccbox<CR>", desc = "美化注释" },
       },
       v = {
         -- comment-box
-        ["<Leader>mm"] = {":CBccbox", desc = "美化注释"},
+        ["<Leader>mm"] = { "<cmd>CBccbox<CR>", desc = "美化注释" },
       },
       t = {
         -- setting a mapping to false will disable it
