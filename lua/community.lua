@@ -38,4 +38,10 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   -- 滚动条
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
+  -- 跳转
+  { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.nvim-spider" },
+  { import = "astrocommunity.motion.mini-surround" },
+  { import = "astrocommunity.motion.mini-ai" },
 }
