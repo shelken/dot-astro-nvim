@@ -44,6 +44,7 @@ return {
       "cssls", -- css language server
       ---- Configuration Language
       "marksman", -- markdown ls
+      "markdown_oxide", -- markdown ls
       "jsonls", -- json language server
       "yamlls", -- yaml language server
       "taplo", -- toml language server
@@ -145,7 +146,7 @@ return {
           desc = "Cleanup of all generated print statements",
         },
       },
-    x = {
+      x = {
         -- refactoring
         ["<Leader>ri"] = {
           function() require("refactoring").refactor "Inline Variable" end,
@@ -167,7 +168,7 @@ return {
           function() require("telescope").extensions.refactoring.refactors() end,
           desc = "Prompt for a refactor to apply",
         },
-    },
+      },
     },
     -- visual mode(what's the difference between v and x???)
     -- A custom `on_attach` function to be run after the default `on_attach` function
