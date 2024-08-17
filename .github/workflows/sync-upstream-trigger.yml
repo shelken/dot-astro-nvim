@@ -40,7 +40,7 @@ jobs:
           owner: ${{ github.repository_owner }}
           repo: ${{ env.TARGET_REPO }}
           github_token: ${{ steps.generate_token.outputs.token }}
-          github_user: "my-action-bot"
+          # github_user: "my-action-bot"
           workflow_file_name: ${{ env.TARGET_WORKFLOW_FILE }}
           ref: ${{ env.TARGET_BRANCH }}
           wait_interval: 10
