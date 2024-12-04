@@ -39,7 +39,7 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       ---- Frontend & NodeJS
-      "tsserver", -- typescript/javascript language server
+      "ts_ls", -- typescript/javascript language server
       "html", -- html language server
       "cssls", -- css language server
       ---- Configuration Language
@@ -53,9 +53,9 @@ return {
       "gopls", -- go
       "rust_analyzer", -- rust
       "pyright", -- python
-      "ruff_lsp", -- extremely fast Python linter and code transformation
+      "ruff", -- extremely fast Python linter and code transformation
       "jdtls", -- java
-      "bufls",
+      "buf_ls",
       "nil_ls", -- nix language server
       ---- Operation & Cloud Nativautoindente
       "bashls", -- bash
