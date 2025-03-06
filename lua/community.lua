@@ -37,11 +37,12 @@ return {
   -- https://github.com/folke/noice.nvim
   { import = "astrocommunity.utility.noice-nvim" },
   -- 滚动条
-  { import = "astrocommunity.scrolling.nvim-scrollbar" },
+  -- { import = "astrocommunity.scrolling.nvim-scrollbar" },
+
   -- 跳转
-  { import = "astrocommunity.motion.flash-nvim" },
-  { import = "astrocommunity.motion.leap-nvim" },
-  { import = "astrocommunity.motion.nvim-spider" },
-  { import = "astrocommunity.motion.mini-surround" },
-  { import = "astrocommunity.motion.mini-ai" },
+  { import = "astrocommunity.motion.flash-nvim" }, -- s 快速搜索跳转
+  -- { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.nvim-spider" }, -- w,e,b 跳过不重要标点符号
+  { import = "astrocommunity.motion.mini-surround" }, -- gza/gzd 添加/删除包围符号
+  -- { import = "astrocommunity.motion.mini-ai" },
 }
