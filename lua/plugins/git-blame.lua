@@ -5,7 +5,7 @@ return {
     "f-person/git-blame.nvim",
     -- dir = "~/git-blame.nvim",
     -- load the plugin at startup
-    -- event = "VeryLazy",
+    event = "VeryLazy",
     -- Because of the keys part, you will be lazy loading this plugin.
     -- The plugin wil only load once one of the keys is used.
     -- If you want to load the plugin at startup, add something like event = "VeryLazy",
@@ -13,7 +13,7 @@ return {
     opts = {
       enabled = true,
       message_template = " <summary> • <date> • <author> • <<sha>>",
-      date_format = "%m-%d-%Y %H:%M:%S",
+      date_format = "%Y-%m-%d %H:%M:%S",
       virtual_text_column = 1,
     },
     keys = {
@@ -53,5 +53,15 @@ return {
         desc = "copy file url to clipboard",
       },
     },
+  },
+  {
+    "sindrets/diffview.nvim",
+    cmd = { "DiffviewOpen", "DiffviewFileHistory" },
+    keys = {
+      { "<leader>Do", "<cmd>DiffviewOpen<cr>", desc = "DiffView Open" },
+      { "<leader>Dc", "<cmd>DiffviewClose<cr>", desc = "DiffView Close" },
+      { "<leader>Dh", "<cmd>DiffviewFileHistory %<cr>", desc = "DiffView History" },
+    },
+    config = function() require "custom.config.diffview" end,
   },
 }
