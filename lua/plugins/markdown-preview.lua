@@ -1,19 +1,5 @@
 ---@type LazySpec
 return {
-  -- {
-  --   "0x00-ketsu/markdown-preview.nvim",
-  --   ft = { "md", "markdown", "mkd", "mkdn", "mdwn", "mdown", "mdtxt", "mdtext", "rmd", "wiki" },
-  --   keys = {
-  --     { noremap = true, mode = "n", "<leader>mP", "<cmd>MPToggle<CR>", desc = "切换md预览" },
-  --   },
-  --   config = function()
-  --     require("markdown-preview").setup {
-  --       -- your configuration comes here
-  --       -- or leave it empty to use the default settings
-  --       -- refer to the setup section below
-  --     }
-  --   end,
-  -- },
   -- better markdown preview
   {
     "iamcco/markdown-preview.nvim",
@@ -30,5 +16,14 @@ return {
     ft = { "markdown" },
     build = function() vim.fn["mkdp#util#install"]() end,
     -- build = "cd app && yarn install",
+  },
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter", "echasnovski/mini.nvim" }, -- if you use the mini.nvim suite
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {},
   },
 }
