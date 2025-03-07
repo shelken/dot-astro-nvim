@@ -12,7 +12,36 @@ return {
         endpoint = "https://api.deepseek.com",
         model = "deepseek-coder",
         api_key_name = "DEEPSEEK_API_KEY",
+        disabled_tools = true,
       },
+      qianwen = {
+        __inherited_from = "openai",
+        api_key_name = "DASHSCOPE_API_KEY",
+        endpoint = "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        model = "qwen-coder-plus-latest",
+      },
+      -- not good for ollama
+      -- ollama_mio = {
+      --   __inherited_from = "openai",
+      --   api_key_name = "",
+      --   endpoint = "http://mio.local:11434/v1",
+      --   model = "deepseek-r1:14b",
+      --   disabled_tools = true,
+      -- },
+      -- ollama_sakamoto = {
+      --   __inherited_from = "openai",
+      --   api_key_name = "",
+      --   endpoint = "http://sakamoto.local:11434/v1",
+      --   model = "deepseek-r1:14b",
+      --   disabled_tools = true,
+      -- },
+      -- ollama_pveai = {
+      --   __inherited_from = "openai",
+      --   api_key_name = "",
+      --   endpoint = "http://192.168.6.42:11434/v1",
+      --   model = "codeqwen:7b",
+      --   disabled_tools = true,
+      -- },
     },
     mappings = {
       -- ---@class AvanteConflictMappings
