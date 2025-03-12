@@ -17,26 +17,26 @@ return {
       virtual_text_column = 1,
     },
     keys = {
-      {
-        "<Leader>gfu",
-        "<cmd>GitBlameToggle<cr>",
-        desc = "toggle git blame",
-      },
-      {
-        "<Leader>gfe",
-        "<cmd>GitBlameEnable<cr>",
-        desc = "enable git blame",
-      },
-      {
-        "<Leader>gfd",
-        "<cmd>GitBlameDisable<cr>",
-        desc = "disable git blame",
-      },
-      {
-        "<Leader>gfh",
-        "<cmd>GitBlameCopySHA<cr>",
-        desc = "copy line commit SHA",
-      },
+      -- {
+      --   "<Leader>gfu",
+      --   "<cmd>GitBlameToggle<cr>",
+      --   desc = "toggle git blame",
+      -- },
+      -- {
+      --   "<Leader>gfe",
+      --   "<cmd>GitBlameEnable<cr>",
+      --   desc = "enable git blame",
+      -- },
+      -- {
+      --   "<Leader>gfd",
+      --   "<cmd>GitBlameDisable<cr>",
+      --   desc = "disable git blame",
+      -- },
+      -- {
+      --   "<Leader>gfh",
+      --   "<cmd>GitBlameCopySHA<cr>",
+      --   desc = "copy line commit SHA",
+      -- },
       {
         "<Leader>gfl",
         "<cmd>GitBlameCopyCommitURL<cr>",
@@ -54,14 +54,14 @@ return {
       },
     },
   },
-  {
-    -- "FabijanZulj/blame.nvim",
-    -- lazy = false,
-    -- config = function() require("blame").setup {} end,
-    -- opts = {
-    --   blame_options = { "-w" },
-    -- },
-  },
+  -- {
+  --   "FabijanZulj/blame.nvim",
+  --   lazy = false,
+  --   config = function() require("blame").setup {} end,
+  --   opts = {
+  --     blame_options = { "-w" },
+  --   },
+  -- },
   {
     "sindrets/diffview.nvim",
     cmd = { "DiffviewOpen", "DiffviewFileHistory" },
@@ -71,14 +71,4 @@ return {
       { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "DiffView History" },
     },
   },
-  -- {
-  --   "sindrets/diffview.nvim",
-  --   cmd = { "DiffviewOpen", "DiffviewFileHistory" },
-  --   keys = {
-  --     { "<leader>Do", "<cmd>DiffviewOpen<cr>", desc = "DiffView Open" },
-  --     { "<leader>Dc", "<cmd>DiffviewClose<cr>", desc = "DiffView Close" },
-  --     { "<leader>Dh", "<cmd>DiffviewFileHistory %<cr>", desc = "DiffView History" },
-  --   },
-  --   config = function() require "custom.config.diffview" end,
-  -- },
 }
