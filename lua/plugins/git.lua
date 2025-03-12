@@ -54,6 +54,23 @@ return {
       },
     },
   },
+  {
+    -- "FabijanZulj/blame.nvim",
+    -- lazy = false,
+    -- config = function() require("blame").setup {} end,
+    -- opts = {
+    --   blame_options = { "-w" },
+    -- },
+  },
+  {
+    "sindrets/diffview.nvim",
+    cmd = { "DiffviewOpen", "DiffviewFileHistory" },
+    keys = {
+      { "<leader>go", "<cmd>DiffviewOpen<cr>", desc = "DiffView Open" },
+      { "<leader>gc", "<cmd>DiffviewClose<cr>", desc = "DiffView Close" },
+      { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "DiffView History" },
+    },
+  },
   -- {
   --   "sindrets/diffview.nvim",
   --   cmd = { "DiffviewOpen", "DiffviewFileHistory" },
