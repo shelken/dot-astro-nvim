@@ -43,6 +43,7 @@ return {
       -- },
       formatting.nginx_beautifier, -- Nginx formatter
       formatting.verible_verilog_format, -- Verilog formatter
+      formatting.hclfmt,
       -- formatting.emacs_scheme_mode, -- using emacs in batch mode to format scheme files.
       -- formatting.fnlfmt, -- Format Fennel code
     }

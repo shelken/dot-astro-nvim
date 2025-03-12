@@ -7,6 +7,8 @@ return {
   "AstroNvim/astrocommunity",
   -- theme
   { import = "astrocommunity.colorscheme.catppuccin" },
+  -- winbar
+  { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   -- language
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.go" },
