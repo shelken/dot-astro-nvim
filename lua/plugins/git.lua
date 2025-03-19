@@ -70,5 +70,18 @@ return {
       { "<leader>gc", "<cmd>DiffviewClose<cr>", desc = "DiffView Close" },
       { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "DiffView History" },
     },
+    {
+      "NeogitOrg/neogit",
+      dependencies = {
+        "nvim-lua/plenary.nvim", -- required
+        "sindrets/diffview.nvim", -- optional - Diff integration
+
+        -- Only one of these is needed.
+        "nvim-telescope/telescope.nvim", -- optional
+        -- "ibhagwan/fzf-lua", -- optional
+        -- "echasnovski/mini.pick", -- optional
+      },
+      config = true,
+    },
   },
 }
