@@ -2,9 +2,13 @@
 
 ---@type LazySpec
 return {
+  -- workaround
+  { "williamboman/mason.nvim", version = "^1.0.0" },
+  -- { "mason-org/mason-lspconfig.nvim", version = "^1.0.0" },
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
+    version = "^1.0.0",
     -- mason is unusable on NixOS, disable it.
     -- ensure_installed nothing
     opts = function(_, opts)
