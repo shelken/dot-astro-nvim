@@ -67,6 +67,10 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
+      taplo = {
+        single_file_support = false,
+        on_attach = function(client, _) client.server_capabilities.foldingRangeProvider = false end,
+      },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached
