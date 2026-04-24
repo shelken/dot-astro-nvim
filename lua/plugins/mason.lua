@@ -2,18 +2,24 @@
 
 ---@type LazySpec
 return {
-  -- workaround
-  { "williamboman/mason.nvim", version = "^1.0.0" },
-  -- { "mason-org/mason-lspconfig.nvim", version = "^1.0.0" },
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    opts = function(_, opts)
+      opts.ensure_installed = {}
+      opts.run_on_start = false
+    end,
+  },
+  -- AstroNvim v6 和 mason-lspconfig v2 需要 Mason v2。
+  { "mason-org/mason.nvim", version = "^2.0.0" },
   -- use mason-lspconfig to configure LSP installations
   {
-    "williamboman/mason-lspconfig.nvim",
-    version = "^1.0.0",
+    "mason-org/mason-lspconfig.nvim",
+    version = "^2.0.0",
     -- mason is unusable on NixOS, disable it.
     -- ensure_installed nothing
     opts = function(_, opts)
       opts.ensure_installed = nil
-      opts.automatic_installation = false
+      opts.automatic_enable = false
     end,
 
     -- overrides `require("mason-lspconfig").setup(...)`
