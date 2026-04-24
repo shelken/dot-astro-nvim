@@ -1,11 +1,9 @@
 ---@type LazySpec
 return {
   "folke/noice.nvim",
-  config = function()
-    require("noice").setup {
-      presets = {
-        command_palette = false, -- position the cmdline and popupmenu together
-      },
-    }
+  opts = function(_, opts)
+    opts.presets = opts.presets or {}
+    opts.presets.command_palette = false
+    return opts
   end,
 }
